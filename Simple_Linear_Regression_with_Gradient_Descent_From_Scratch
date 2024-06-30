@@ -1,1 +1,260 @@
-{"metadata":{"kernelspec":{"language":"python","display_name":"Python 3","name":"python3"},"language_info":{"pygments_lexer":"ipython3","nbconvert_exporter":"python","version":"3.6.4","file_extension":".py","codemirror_mode":{"name":"ipython","version":3},"name":"python","mimetype":"text/x-python"},"kaggle":{"accelerator":"none","dataSources":[{"sourceId":8825252,"sourceType":"datasetVersion","datasetId":5309605}],"isInternetEnabled":true,"language":"python","sourceType":"notebook","isGpuEnabled":false}},"nbformat_minor":4,"nbformat":4,"cells":[{"cell_type":"code","source":"# This Python 3 environment comes with many helpful analytics libraries installed\n# It is defined by the kaggle/python Docker image: https://github.com/kaggle/docker-python\n# For example, here's several helpful packages to load\n\nimport numpy as np # linear algebra\nimport pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)\n\n# Input data files are available in the read-only \"../input/\" directory\n# For example, running this (by clicking run or pressing Shift+Enter) will list all files under the input directory\n\nimport os\nfor dirname, _, filenames in os.walk('/kaggle/input'):\n    for filename in filenames:\n        print(os.path.join(dirname, filename))\n\n# You can write up to 20GB to the current directory (/kaggle/working/) that gets preserved as output when you create a version using \"Save & Run All\" \n# You can also write temporary files to /kaggle/temp/, but they won't be saved outside of the current session","metadata":{"_uuid":"8f2839f25d086af736a60e9eeb907d3b93b6e0e5","_cell_guid":"b1076dfc-b9ad-4769-8c92-a6c4dae69d19","trusted":true},"execution_count":null,"outputs":[]}]}
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "b81d650f",
+   "metadata": {
+    "_cell_guid": "b1076dfc-b9ad-4769-8c92-a6c4dae69d19",
+    "_uuid": "8f2839f25d086af736a60e9eeb907d3b93b6e0e5",
+    "execution": {
+     "iopub.execute_input": "2024-06-30T18:38:52.486400Z",
+     "iopub.status.busy": "2024-06-30T18:38:52.485097Z",
+     "iopub.status.idle": "2024-06-30T18:38:55.381446Z",
+     "shell.execute_reply": "2024-06-30T18:38:55.379865Z"
+    },
+    "papermill": {
+     "duration": 2.905234,
+     "end_time": "2024-06-30T18:38:55.384775",
+     "exception": false,
+     "start_time": "2024-06-30T18:38:52.479541",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "/kaggle/input/advertising/advertising.csv\n"
+     ]
+    }
+   ],
+   "source": [
+    "import numpy as np # linear algebra\n",
+    "import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)\n",
+    "import matplotlib.pyplot as plt\n",
+    "import seaborn as sns\n",
+    "\n",
+    "from sklearn.linear_model import LinearRegression\n",
+    "from sklearn.metrics import mean_squared_error, mean_absolute_error\n",
+    "from sklearn.model_selection import train_test_split, cross_val_score\n",
+    "\n",
+    "# Settings\n",
+    "pd.set_option(\"display.float_format\", lambda x: \"%.2f\" % x)\n",
+    "\n",
+    "\n",
+    "# Input data files are available in the read-only \"../input/\" directory\n",
+    "# For example, running this (by clicking run or pressing Shift+Enter) will list all files under the input directory\n",
+    "\n",
+    "import os\n",
+    "for dirname, _, filenames in os.walk('/kaggle/input'):\n",
+    "    for filename in filenames:\n",
+    "        print(os.path.join(dirname, filename))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "a614e0ea",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2024-06-30T18:38:55.394468Z",
+     "iopub.status.busy": "2024-06-30T18:38:55.393790Z",
+     "iopub.status.idle": "2024-06-30T18:38:55.413884Z",
+     "shell.execute_reply": "2024-06-30T18:38:55.412431Z"
+    },
+    "papermill": {
+     "duration": 0.028272,
+     "end_time": "2024-06-30T18:38:55.417153",
+     "exception": false,
+     "start_time": "2024-06-30T18:38:55.388881",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [],
+   "source": [
+    "df = pd.read_csv(\"/kaggle/input/advertising/advertising.csv\")"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "8e17f5a9",
+   "metadata": {
+    "papermill": {
+     "duration": 0.003081,
+     "end_time": "2024-06-30T18:38:55.424137",
+     "exception": false,
+     "start_time": "2024-06-30T18:38:55.421056",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "source": [
+    "cost function MSE"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "c6f49550",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2024-06-30T18:38:55.432976Z",
+     "iopub.status.busy": "2024-06-30T18:38:55.432525Z",
+     "iopub.status.idle": "2024-06-30T18:38:55.439509Z",
+     "shell.execute_reply": "2024-06-30T18:38:55.438283Z"
+    },
+    "papermill": {
+     "duration": 0.014096,
+     "end_time": "2024-06-30T18:38:55.441892",
+     "exception": false,
+     "start_time": "2024-06-30T18:38:55.427796",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [],
+   "source": [
+    "def cost_function(Y, b, w, X):\n",
+    "    m=len(Y)\n",
+    "    sse = 0\n",
+    "    for i in range(0, m):\n",
+    "        y_hat = b + w * X[i]\n",
+    "        y = Y[i]\n",
+    "        sse += (y_hat - y) ** 2\n",
+    "    mse = sse / m\n",
+    "    return mse"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "fe691d85",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2024-06-30T18:38:55.450943Z",
+     "iopub.status.busy": "2024-06-30T18:38:55.449667Z",
+     "iopub.status.idle": "2024-06-30T18:38:55.457385Z",
+     "shell.execute_reply": "2024-06-30T18:38:55.456188Z"
+    },
+    "papermill": {
+     "duration": 0.014833,
+     "end_time": "2024-06-30T18:38:55.460053",
+     "exception": false,
+     "start_time": "2024-06-30T18:38:55.445220",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [],
+   "source": [
+    "# Update Weights\n",
+    "def update_weights(Y, b, w, X, learning_rate):\n",
+    "    m = len(Y)\n",
+    "    b_deriv_sum = 0\n",
+    "    w_deriv_sum = 0\n",
+    "    for i in range (0, m):\n",
+    "        y_hat = b + w * X[i]\n",
+    "        y = Y[i]\n",
+    "        b_deriv_sum += (y_hat - y)\n",
+    "        w_deriv_sum += (y_hat - y) * X[i]\n",
+    "    new_b = b - (learning_rate * 1 / m * b_deriv_sum)\n",
+    "    new_w = w - (learning_rate * 1 / m * w_deriv_sum)\n",
+    "    return new_b, new_w\n",
+    "    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "05d44dba",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2024-06-30T18:38:55.468960Z",
+     "iopub.status.busy": "2024-06-30T18:38:55.468552Z",
+     "iopub.status.idle": "2024-06-30T18:38:55.477789Z",
+     "shell.execute_reply": "2024-06-30T18:38:55.476393Z"
+    },
+    "papermill": {
+     "duration": 0.016912,
+     "end_time": "2024-06-30T18:38:55.480377",
+     "exception": false,
+     "start_time": "2024-06-30T18:38:55.463465",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [],
+   "source": [
+    "# Train fonksiyonu\n",
+    "def train(Y, initial_b, initial_w, X, learning_rate, num_iters):\n",
+    "    print(\"Starting gradient descent at b = {0}, w = {1}, mse = {2}\". format(initial_b, initial_w, cost_function(Y, initial_b, initial_w, X)))\n",
+    "    \n",
+    "    b = initial_b\n",
+    "    w = initial_w\n",
+    "    cost_history = []\n",
+    "    for i in range(num_iters):\n",
+    "        b, w = update_weights(Y, b, w, X, learning_rate)\n",
+    "        mse = cost_function(Y, b, w, X)\n",
+    "        cost_history.append(mse)\n",
+    "        if i % 100 == 0:\n",
+    "            print(\"iter = {:d}  b = {:.2f}, w = {:.4f}, mse = {:.4}\".format(i, b, w, mse))\n",
+    "        \n",
+    "    print(\"After {0} iterations b = {1}, w = {2}, mse = {3}\".format(num_iters, b, w, cost_function(Y, b, w, X)))\n",
+    "    return cost_history, b, w\n",
+    "            "
+   ]
+  }
+ ],
+ "metadata": {
+  "kaggle": {
+   "accelerator": "none",
+   "dataSources": [
+    {
+     "datasetId": 5309605,
+     "sourceId": 8825252,
+     "sourceType": "datasetVersion"
+    }
+   ],
+   "dockerImageVersionId": 30732,
+   "isGpuEnabled": false,
+   "isInternetEnabled": true,
+   "language": "python",
+   "sourceType": "notebook"
+  },
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.13"
+  },
+  "papermill": {
+   "default_parameters": {},
+   "duration": 6.778159,
+   "end_time": "2024-06-30T18:38:56.105347",
+   "environment_variables": {},
+   "exception": null,
+   "input_path": "__notebook__.ipynb",
+   "output_path": "__notebook__.ipynb",
+   "parameters": {},
+   "start_time": "2024-06-30T18:38:49.327188",
+   "version": "2.5.0"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
