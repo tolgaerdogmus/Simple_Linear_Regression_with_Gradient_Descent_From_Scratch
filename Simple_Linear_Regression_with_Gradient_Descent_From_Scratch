@@ -3,21 +3,21 @@
   {
    "cell_type": "code",
    "execution_count": 1,
-   "id": "b81d650f",
+   "id": "2ba2b9a8",
    "metadata": {
     "_cell_guid": "b1076dfc-b9ad-4769-8c92-a6c4dae69d19",
     "_uuid": "8f2839f25d086af736a60e9eeb907d3b93b6e0e5",
     "execution": {
-     "iopub.execute_input": "2024-06-30T18:38:52.486400Z",
-     "iopub.status.busy": "2024-06-30T18:38:52.485097Z",
-     "iopub.status.idle": "2024-06-30T18:38:55.381446Z",
-     "shell.execute_reply": "2024-06-30T18:38:55.379865Z"
+     "iopub.execute_input": "2024-06-30T18:44:45.146264Z",
+     "iopub.status.busy": "2024-06-30T18:44:45.145834Z",
+     "iopub.status.idle": "2024-06-30T18:44:48.000108Z",
+     "shell.execute_reply": "2024-06-30T18:44:47.998616Z"
     },
     "papermill": {
-     "duration": 2.905234,
-     "end_time": "2024-06-30T18:38:55.384775",
+     "duration": 2.863385,
+     "end_time": "2024-06-30T18:44:48.002894",
      "exception": false,
-     "start_time": "2024-06-30T18:38:52.479541",
+     "start_time": "2024-06-30T18:44:45.139509",
      "status": "completed"
     },
     "tags": []
@@ -57,19 +57,19 @@
   {
    "cell_type": "code",
    "execution_count": 2,
-   "id": "a614e0ea",
+   "id": "79690969",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2024-06-30T18:38:55.394468Z",
-     "iopub.status.busy": "2024-06-30T18:38:55.393790Z",
-     "iopub.status.idle": "2024-06-30T18:38:55.413884Z",
-     "shell.execute_reply": "2024-06-30T18:38:55.412431Z"
+     "iopub.execute_input": "2024-06-30T18:44:48.013586Z",
+     "iopub.status.busy": "2024-06-30T18:44:48.012978Z",
+     "iopub.status.idle": "2024-06-30T18:44:48.029700Z",
+     "shell.execute_reply": "2024-06-30T18:44:48.028556Z"
     },
     "papermill": {
-     "duration": 0.028272,
-     "end_time": "2024-06-30T18:38:55.417153",
+     "duration": 0.02523,
+     "end_time": "2024-06-30T18:44:48.032673",
      "exception": false,
-     "start_time": "2024-06-30T18:38:55.388881",
+     "start_time": "2024-06-30T18:44:48.007443",
      "status": "completed"
     },
     "tags": []
@@ -81,13 +81,13 @@
   },
   {
    "cell_type": "markdown",
-   "id": "8e17f5a9",
+   "id": "15d42305",
    "metadata": {
     "papermill": {
-     "duration": 0.003081,
-     "end_time": "2024-06-30T18:38:55.424137",
+     "duration": 0.003864,
+     "end_time": "2024-06-30T18:44:48.040984",
      "exception": false,
-     "start_time": "2024-06-30T18:38:55.421056",
+     "start_time": "2024-06-30T18:44:48.037120",
      "status": "completed"
     },
     "tags": []
@@ -99,19 +99,19 @@
   {
    "cell_type": "code",
    "execution_count": 3,
-   "id": "c6f49550",
+   "id": "eeaaa72e",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2024-06-30T18:38:55.432976Z",
-     "iopub.status.busy": "2024-06-30T18:38:55.432525Z",
-     "iopub.status.idle": "2024-06-30T18:38:55.439509Z",
-     "shell.execute_reply": "2024-06-30T18:38:55.438283Z"
+     "iopub.execute_input": "2024-06-30T18:44:48.051048Z",
+     "iopub.status.busy": "2024-06-30T18:44:48.050659Z",
+     "iopub.status.idle": "2024-06-30T18:44:48.058178Z",
+     "shell.execute_reply": "2024-06-30T18:44:48.056866Z"
     },
     "papermill": {
-     "duration": 0.014096,
-     "end_time": "2024-06-30T18:38:55.441892",
+     "duration": 0.015634,
+     "end_time": "2024-06-30T18:44:48.060752",
      "exception": false,
-     "start_time": "2024-06-30T18:38:55.427796",
+     "start_time": "2024-06-30T18:44:48.045118",
      "status": "completed"
     },
     "tags": []
@@ -132,19 +132,19 @@
   {
    "cell_type": "code",
    "execution_count": 4,
-   "id": "fe691d85",
+   "id": "024bd48c",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2024-06-30T18:38:55.450943Z",
-     "iopub.status.busy": "2024-06-30T18:38:55.449667Z",
-     "iopub.status.idle": "2024-06-30T18:38:55.457385Z",
-     "shell.execute_reply": "2024-06-30T18:38:55.456188Z"
+     "iopub.execute_input": "2024-06-30T18:44:48.070831Z",
+     "iopub.status.busy": "2024-06-30T18:44:48.070413Z",
+     "iopub.status.idle": "2024-06-30T18:44:48.078148Z",
+     "shell.execute_reply": "2024-06-30T18:44:48.076912Z"
     },
     "papermill": {
-     "duration": 0.014833,
-     "end_time": "2024-06-30T18:38:55.460053",
+     "duration": 0.015612,
+     "end_time": "2024-06-30T18:44:48.080664",
      "exception": false,
-     "start_time": "2024-06-30T18:38:55.445220",
+     "start_time": "2024-06-30T18:44:48.065052",
      "status": "completed"
     },
     "tags": []
@@ -170,19 +170,19 @@
   {
    "cell_type": "code",
    "execution_count": 5,
-   "id": "05d44dba",
+   "id": "e80def26",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2024-06-30T18:38:55.468960Z",
-     "iopub.status.busy": "2024-06-30T18:38:55.468552Z",
-     "iopub.status.idle": "2024-06-30T18:38:55.477789Z",
-     "shell.execute_reply": "2024-06-30T18:38:55.476393Z"
+     "iopub.execute_input": "2024-06-30T18:44:48.090818Z",
+     "iopub.status.busy": "2024-06-30T18:44:48.090409Z",
+     "iopub.status.idle": "2024-06-30T18:44:48.099867Z",
+     "shell.execute_reply": "2024-06-30T18:44:48.098605Z"
     },
     "papermill": {
-     "duration": 0.016912,
-     "end_time": "2024-06-30T18:38:55.480377",
+     "duration": 0.01737,
+     "end_time": "2024-06-30T18:44:48.102254",
      "exception": false,
-     "start_time": "2024-06-30T18:38:55.463465",
+     "start_time": "2024-06-30T18:44:48.084884",
      "status": "completed"
     },
     "tags": []
@@ -206,6 +206,195 @@
     "    print(\"After {0} iterations b = {1}, w = {2}, mse = {3}\".format(num_iters, b, w, cost_function(Y, b, w, X)))\n",
     "    return cost_history, b, w\n",
     "            "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "8eeb80cb",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2024-06-30T18:44:48.112703Z",
+     "iopub.status.busy": "2024-06-30T18:44:48.112271Z",
+     "iopub.status.idle": "2024-06-30T18:44:48.123186Z",
+     "shell.execute_reply": "2024-06-30T18:44:48.121882Z"
+    },
+    "papermill": {
+     "duration": 0.019258,
+     "end_time": "2024-06-30T18:44:48.125772",
+     "exception": false,
+     "start_time": "2024-06-30T18:44:48.106514",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [],
+   "source": [
+    "X = df[\"radio\"]\n",
+    "Y = df[\"sales\"]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "17dd48ae",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2024-06-30T18:44:48.136969Z",
+     "iopub.status.busy": "2024-06-30T18:44:48.136475Z",
+     "iopub.status.idle": "2024-06-30T18:44:48.142014Z",
+     "shell.execute_reply": "2024-06-30T18:44:48.140867Z"
+    },
+    "papermill": {
+     "duration": 0.014425,
+     "end_time": "2024-06-30T18:44:48.144638",
+     "exception": false,
+     "start_time": "2024-06-30T18:44:48.130213",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [],
+   "source": [
+    "# HYPERPARAMETERS\n",
+    "learning_rate = 0.001\n",
+    "initial_b = 0.001\n",
+    "initial_w = 0.001\n",
+    "num_iters = 10000"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "id": "4b0fc9e4",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2024-06-30T18:44:48.155043Z",
+     "iopub.status.busy": "2024-06-30T18:44:48.154214Z",
+     "iopub.status.idle": "2024-06-30T18:45:41.323084Z",
+     "shell.execute_reply": "2024-06-30T18:45:41.321567Z"
+    },
+    "papermill": {
+     "duration": 53.177042,
+     "end_time": "2024-06-30T18:45:41.325887",
+     "exception": false,
+     "start_time": "2024-06-30T18:44:48.148845",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Starting gradient descent at b = 0.001, w = 0.001, mse = 222.9477491673001\n",
+      "iter = 0  b = 0.01, w = 0.3708, mse = 53.25\n",
+      "iter = 100  b = 0.28, w = 0.4788, mse = 41.6\n",
+      "iter = 200  b = 0.54, w = 0.4709, mse = 40.29\n",
+      "iter = 300  b = 0.79, w = 0.4633, mse = 39.04\n",
+      "iter = 400  b = 1.03, w = 0.4559, mse = 37.87\n",
+      "iter = 500  b = 1.27, w = 0.4487, mse = 36.76\n",
+      "iter = 600  b = 1.49, w = 0.4417, mse = 35.72\n",
+      "iter = 700  b = 1.72, w = 0.4349, mse = 34.73\n",
+      "iter = 800  b = 1.93, w = 0.4283, mse = 33.8\n",
+      "iter = 900  b = 2.14, w = 0.4219, mse = 32.92\n",
+      "iter = 1000  b = 2.35, w = 0.4157, mse = 32.09\n",
+      "iter = 1100  b = 2.54, w = 0.4096, mse = 31.3\n",
+      "iter = 1200  b = 2.74, w = 0.4037, mse = 30.56\n",
+      "iter = 1300  b = 2.92, w = 0.3980, mse = 29.87\n",
+      "iter = 1400  b = 3.10, w = 0.3925, mse = 29.21\n",
+      "iter = 1500  b = 3.28, w = 0.3871, mse = 28.58\n",
+      "iter = 1600  b = 3.45, w = 0.3818, mse = 28.0\n",
+      "iter = 1700  b = 3.62, w = 0.3767, mse = 27.44\n",
+      "iter = 1800  b = 3.78, w = 0.3718, mse = 26.92\n",
+      "iter = 1900  b = 3.94, w = 0.3670, mse = 26.42\n",
+      "iter = 2000  b = 4.09, w = 0.3623, mse = 25.96\n",
+      "iter = 2100  b = 4.24, w = 0.3578, mse = 25.52\n",
+      "iter = 2200  b = 4.38, w = 0.3534, mse = 25.1\n",
+      "iter = 2300  b = 4.52, w = 0.3491, mse = 24.71\n",
+      "iter = 2400  b = 4.66, w = 0.3449, mse = 24.34\n",
+      "iter = 2500  b = 4.79, w = 0.3409, mse = 23.99\n",
+      "iter = 2600  b = 4.92, w = 0.3369, mse = 23.66\n",
+      "iter = 2700  b = 5.04, w = 0.3331, mse = 23.35\n",
+      "iter = 2800  b = 5.16, w = 0.3294, mse = 23.05\n",
+      "iter = 2900  b = 5.28, w = 0.3258, mse = 22.77\n",
+      "iter = 3000  b = 5.40, w = 0.3223, mse = 22.51\n",
+      "iter = 3100  b = 5.51, w = 0.3189, mse = 22.26\n",
+      "iter = 3200  b = 5.62, w = 0.3156, mse = 22.03\n",
+      "iter = 3300  b = 5.72, w = 0.3124, mse = 21.81\n",
+      "iter = 3400  b = 5.82, w = 0.3093, mse = 21.6\n",
+      "iter = 3500  b = 5.92, w = 0.3062, mse = 21.41\n",
+      "iter = 3600  b = 6.02, w = 0.3033, mse = 21.22\n",
+      "iter = 3700  b = 6.11, w = 0.3004, mse = 21.05\n",
+      "iter = 3800  b = 6.20, w = 0.2976, mse = 20.88\n",
+      "iter = 3900  b = 6.29, w = 0.2949, mse = 20.72\n",
+      "iter = 4000  b = 6.38, w = 0.2923, mse = 20.58\n",
+      "iter = 4100  b = 6.46, w = 0.2898, mse = 20.44\n",
+      "iter = 4200  b = 6.54, w = 0.2873, mse = 20.31\n",
+      "iter = 4300  b = 6.62, w = 0.2849, mse = 20.18\n",
+      "iter = 4400  b = 6.70, w = 0.2825, mse = 20.06\n",
+      "iter = 4500  b = 6.77, w = 0.2803, mse = 19.95\n",
+      "iter = 4600  b = 6.84, w = 0.2780, mse = 19.85\n",
+      "iter = 4700  b = 6.91, w = 0.2759, mse = 19.75\n",
+      "iter = 4800  b = 6.98, w = 0.2738, mse = 19.66\n",
+      "iter = 4900  b = 7.05, w = 0.2718, mse = 19.57\n",
+      "iter = 5000  b = 7.11, w = 0.2698, mse = 19.49\n",
+      "iter = 5100  b = 7.17, w = 0.2679, mse = 19.41\n",
+      "iter = 5200  b = 7.23, w = 0.2660, mse = 19.34\n",
+      "iter = 5300  b = 7.29, w = 0.2642, mse = 19.27\n",
+      "iter = 5400  b = 7.35, w = 0.2625, mse = 19.2\n",
+      "iter = 5500  b = 7.41, w = 0.2608, mse = 19.14\n",
+      "iter = 5600  b = 7.46, w = 0.2591, mse = 19.08\n",
+      "iter = 5700  b = 7.51, w = 0.2575, mse = 19.02\n",
+      "iter = 5800  b = 7.56, w = 0.2560, mse = 18.97\n",
+      "iter = 5900  b = 7.61, w = 0.2544, mse = 18.92\n",
+      "iter = 6000  b = 7.66, w = 0.2530, mse = 18.88\n",
+      "iter = 6100  b = 7.71, w = 0.2515, mse = 18.83\n",
+      "iter = 6200  b = 7.75, w = 0.2501, mse = 18.79\n",
+      "iter = 6300  b = 7.80, w = 0.2488, mse = 18.75\n",
+      "iter = 6400  b = 7.84, w = 0.2475, mse = 18.72\n",
+      "iter = 6500  b = 7.88, w = 0.2462, mse = 18.68\n",
+      "iter = 6600  b = 7.92, w = 0.2450, mse = 18.65\n",
+      "iter = 6700  b = 7.96, w = 0.2437, mse = 18.62\n",
+      "iter = 6800  b = 8.00, w = 0.2426, mse = 18.59\n",
+      "iter = 6900  b = 8.04, w = 0.2414, mse = 18.56\n",
+      "iter = 7000  b = 8.08, w = 0.2403, mse = 18.53\n",
+      "iter = 7100  b = 8.11, w = 0.2393, mse = 18.51\n",
+      "iter = 7200  b = 8.14, w = 0.2382, mse = 18.49\n",
+      "iter = 7300  b = 8.18, w = 0.2372, mse = 18.46\n",
+      "iter = 7400  b = 8.21, w = 0.2362, mse = 18.44\n",
+      "iter = 7500  b = 8.24, w = 0.2353, mse = 18.42\n",
+      "iter = 7600  b = 8.27, w = 0.2343, mse = 18.4\n",
+      "iter = 7700  b = 8.30, w = 0.2334, mse = 18.39\n",
+      "iter = 7800  b = 8.33, w = 0.2325, mse = 18.37\n",
+      "iter = 7900  b = 8.36, w = 0.2317, mse = 18.35\n",
+      "iter = 8000  b = 8.38, w = 0.2309, mse = 18.34\n",
+      "iter = 8100  b = 8.41, w = 0.2301, mse = 18.33\n",
+      "iter = 8200  b = 8.44, w = 0.2293, mse = 18.31\n",
+      "iter = 8300  b = 8.46, w = 0.2285, mse = 18.3\n",
+      "iter = 8400  b = 8.49, w = 0.2278, mse = 18.29\n",
+      "iter = 8500  b = 8.51, w = 0.2271, mse = 18.28\n",
+      "iter = 8600  b = 8.53, w = 0.2264, mse = 18.27\n",
+      "iter = 8700  b = 8.55, w = 0.2257, mse = 18.26\n",
+      "iter = 8800  b = 8.58, w = 0.2250, mse = 18.25\n",
+      "iter = 8900  b = 8.60, w = 0.2244, mse = 18.24\n",
+      "iter = 9000  b = 8.62, w = 0.2238, mse = 18.23\n",
+      "iter = 9100  b = 8.64, w = 0.2232, mse = 18.22\n",
+      "iter = 9200  b = 8.66, w = 0.2226, mse = 18.22\n",
+      "iter = 9300  b = 8.67, w = 0.2220, mse = 18.21\n",
+      "iter = 9400  b = 8.69, w = 0.2214, mse = 18.2\n",
+      "iter = 9500  b = 8.71, w = 0.2209, mse = 18.2\n",
+      "iter = 9600  b = 8.73, w = 0.2204, mse = 18.19\n",
+      "iter = 9700  b = 8.74, w = 0.2199, mse = 18.19\n",
+      "iter = 9800  b = 8.76, w = 0.2194, mse = 18.18\n",
+      "iter = 9900  b = 8.78, w = 0.2189, mse = 18.18\n",
+      "After 10000 iterations b = 8.79062282139543, w = 0.2184390657183005, mse = 18.170680975262957\n"
+     ]
+    }
+   ],
+   "source": [
+    "cost_history, b, w = train(Y, initial_b, initial_w, X, learning_rate, num_iters)"
    ]
   }
  ],
@@ -244,14 +433,14 @@
   },
   "papermill": {
    "default_parameters": {},
-   "duration": 6.778159,
-   "end_time": "2024-06-30T18:38:56.105347",
+   "duration": 60.420449,
+   "end_time": "2024-06-30T18:45:41.961486",
    "environment_variables": {},
    "exception": null,
    "input_path": "__notebook__.ipynb",
    "output_path": "__notebook__.ipynb",
    "parameters": {},
-   "start_time": "2024-06-30T18:38:49.327188",
+   "start_time": "2024-06-30T18:44:41.541037",
    "version": "2.5.0"
   }
  },
